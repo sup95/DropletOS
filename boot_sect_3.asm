@@ -1,5 +1,10 @@
 ; A simple boot sector program that demonstrates addressing.
 
+; The line below tells the assembler about memory offset to be calculated.
+; 0x7c00 is where the boot sector is loaded.
+; Comment and uncomment the line below to play with and analyze different outputs. 
+; [org 0x7c00]
+
 mov ah, 0x0e
 
 ; First attempt
